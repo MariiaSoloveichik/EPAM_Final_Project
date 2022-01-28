@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% load crispy_forms_tags %}
+{% block title %}
+Main page
+{% endblock %}
+{% block body %}
+<form autocomplete="off">
+    {% csrf_token %}
+<div class="container">
+    <div class="row justify-content-center">
+        {{ city_name|crispy }}
+        {{ start_date|crispy }}
+        {{ end_date|crispy }}
+    </div>
+</div>
+<input type="submit" class="btn btn-success" formaction="{% url 'statistic' %}" formmethod="post" value="Get statistics">
+</form>
+{% endblock %}
