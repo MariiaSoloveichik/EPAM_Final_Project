@@ -7,16 +7,20 @@ DateInput = partial(forms.DateInput, {"class": "datepicker"})
 class CityForm(forms.Form):
     city_choices = (
         ("Saint Petersburg", "Saint Petersburg"),
+        ("Moscow", "Moscow"),
         ("Orenburg", "Orenburg"),
         ("Krasnodar", "Krasnodar"),
         ("Murmansk", "Murmansk"),
         ("Vladivostok", "Vladivostok"),
+        ("Tula", "Tula"),
+        ("Samara", "Samara"),
+        ("Ufa", "Ufa"),
         ("Sochi", "Sochi"),
         ("Rome", "Rome"),
         ("London", "London"),
         ("Paris", "Paris"),
         ("Barcelona", "Barcelona"),
-        ("Canberra", "Canberra"),
+        ("Canberra", "Canberra")
     )
 
     form_city = forms.ChoiceField(
