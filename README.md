@@ -28,7 +28,7 @@ wind speed and direction
        docker-compose build
        docker-compose up 
     
-4. Go to http://localhost:8000/
+4. Go to http://127.0.0.1:8000/
 
 
 ###### As usual on localhost
