@@ -36,7 +36,7 @@ wind speed and direction
 
        python manage.py runserver
     
-2. Go to http://localhost:8000/
+2. Go to http://127.0.0.1:8000/
 
 
 ##### The database contains data from 01.01.2010 to 29.01.2022
